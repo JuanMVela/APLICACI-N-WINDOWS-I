@@ -1,6 +1,6 @@
 ﻿namespace MiPrimerAplicacion
 {
-    partial class Form1
+    partial class Formulario
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // Formulario
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Formulario";
+            Opacity = 0.6D;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Formulario";
+            WindowState = FormWindowState.Minimized;
+            FormClosing += Formulario_FormClosing;
+            Load += Formulario_Load;
+            ResumeLayout(false);
         }
 
         #endregion
